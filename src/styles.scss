@@ -1,0 +1,32 @@
+$mid1: #888;
+$mid2: #ddd;
+$hl: #8dd;
+$danger: #d51;
+$bg: #222;
+$bg_editor: #111;
+
+
+@font-face {
+	font-family: "Minecraft";
+	font-style: normal;
+	font-weight: 400;
+	src: url("./fonts/minecraft_font.eot") format("eot"), 
+	     url("./fonts/minecraft_font.woff") format("woff"), 
+	     url("./fonts/minecraft_font.ttf") format("truetype"), 
+	     url("./fonts/minecraft_font.svg#Minecraft") format("svg");
+}
+
+$font: "Minecraft", monospace;
+
+
+::selection {
+	background: $hl;
+}
+
+
+@import "css/global";
+@import "css/sign";
+@import "css/editor";
+@import "css/subpage";
+
+@import "css/alert";

@@ -1,0 +1,74 @@
+
+.editor {
+    width: 320px;
+    background: $bg_editor;
+    color: $mid2;
+    display: block;
+    overflow-y: auto;
+    padding: 30px 30px 10px 30px;
+    font-family: sans-serif;
+    font-family: $font;
+    box-shadow: -2px 5px 10px rgba(0,0,0,0.6);
+    z-index: 10;
+
+    position: absolute; top: 8%; left: 10%;
+    animation: 100ms fadeIn;
+}
+
+.editor h1 {
+    border-bottom: 1px dotted #555;
+    color: #555;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.editor .option {
+    background: $bg;
+    padding: 20px;
+    margin: 30px 0 0 0;
+    border: 1px solid #555;
+    border-radius: 8px;
+}
+
+.editor label {
+    display: block;
+    font-size: 1.3em;
+    margin: 0 0 5px 0;
+    color: $mid2;
+}
+
+input, select, textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    font-size: 0.9em;
+    background: #333;
+    color: $mid2;
+    border: 0;
+    border-bottom: 3px solid #555;
+    font-family: $font;
+    
+    transition: 0.1s border;
+
+    &:focus {
+        border-color: $mid2;
+        outline: 0;
+        transition: 0.2s border;
+    }
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    font-size: 0.8em;
+    resize: vertical;
+}
+
+
+.editor .icons {
+    margin: 25px 0 20px 0;
+    text-align: right;
+}

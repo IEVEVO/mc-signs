@@ -1,0 +1,148 @@
+
+@mixin nosel() {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+body {
+    background: $bg;
+    font-family: $font;
+    color: $mid1;
+    padding-bottom: 1%;
+
+    @include nosel();
+}
+
+a {
+    color: $mid1;
+    transition: 0.1s color;
+
+    &:hover {
+        color: $mid2;
+        transition: 0.1s color;
+    }
+}
+
+button {
+    padding: 10px 14px 10px 14px;
+    font-size: 1em;
+    background: rgba(255,255,255,0.05);
+    color: $mid1;
+    border: 1px solid $mid1;
+    border-radius: 5px;
+    margin: 0 5px 0 5px;
+    cursor: pointer;
+    font-family: $font;
+
+    transition: 0.1s color, 0.1s border;
+
+    &.danger {
+        color: $danger;
+        border-color: $danger;
+    }
+
+    &.active, &.true {
+        color: $hl;
+        border-color: $hl;
+    }
+
+    &.right {
+        float: right;
+    }
+
+    &.small, &.small:focus {
+        border-color: transparent;
+        font-size: 0.7em;
+        padding: 5px 9px 5px 9px;
+        color: $mid2;
+        background: rgba(255,255,255,0.1);
+
+        &:hover {
+            background: rgba(255,255,255,0.2);
+        }
+
+        &.active {
+            background: rgba(136, 221, 221, 0.5);
+        }
+    }
+
+    &:hover {
+        color: $mid2;
+        border-color: $mid2;
+
+        transition: 0.1s color, 0.1s border;
+    }
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+input, label {
+    &[type=checkbox] {
+        display: inline-block;
+        width: 20px; height: 20px;
+        margin-right: 9px;
+
+        &:checked {
+            color: $hl;
+            background: $hl;
+        }
+    }
+}
+
+code {
+    background: rgba(255,255,255,0.2);
+    padding: 3px 5px 3px 5px;
+    margin: 0 2px 0 2px;
+    color: $mid2;
+    font-size: 1.2em;
+    border-radius: 3px;
+}
+
+
+.section {
+    width: 512px;
+    display: block;
+    margin: 50px auto 50px auto;
+    text-align: center;
+}
+
+.footnote {
+    color: #555;
+    width: 512px;
+    text-align: center;
+    display: block;
+    margin: 100px auto 30px auto;
+
+    & .footnote-next {
+        color: $mid2;
+        opacity: 0.2;
+        padding: 15px 0 20px 0;
+        font-size: 0.5em;
+        transition: 0.1s opacity, 0.1s padding;
+
+        &:hover {
+            opacity: 0.5;
+            cursor: pointer;
+        }
+
+        &:active {
+            padding-top: 20px;
+        }
+    }
+}

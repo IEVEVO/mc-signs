@@ -1,0 +1,106 @@
+
+.sign-base {
+    background: rgb(199, 199, 199);
+    background-size: cover;
+    background-position: 0 0;
+    width: 512px;
+    height: 256px;
+    display: block;
+    margin: -15px auto 0 auto;
+    text-align: center;
+    font-size: 2em;
+    color: $mid2;
+    box-shadow: -2px 5px 10px rgb(0, 0, 0);
+}
+
+.sign-line {
+    font-size: 1em;
+    width: 100%;
+    height: 64px;
+    word-wrap: break-word;
+    white-space: nowrap;
+    text-align: center;
+    color: $mid2;
+    font-family: monospace;
+    margin: 0;
+    font-family: $font;
+
+    position: relative; left: 30px;
+}
+
+.sign-line input, .sign-line span {
+    background: rgba(0,0,0,0.05);
+    border: 1px solid transparent;
+    padding: 0;
+    min-width: 50px;
+    font-size: 50px;
+    color: $mid2;
+    font-family: monospace;
+    cursor: pointer;
+    font-family: $font;
+
+    transition: 0.1s background;
+
+    &:empty {
+        padding: 0 15px 0 15px;
+    }
+
+    &:hover {
+        background: rgba(0,0,0,0.2);
+    }
+
+    &:focus, &.focus {
+        outline: 0;
+        background: rgba(0,0,0,0.3);
+        transition: 0.2s background;
+    }
+}
+
+.sign-line .add-section {
+    background: rgba(0,0,0,0);
+    border: 0;
+    font-size: 1em;
+    color: $mid1;
+    cursor: pointer;
+    vertical-align: middle;
+    float: right;
+    position: relative; top: 0px; left: 25px;
+
+    &:hover {
+        color: $mid2;
+    }
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+
+.material {
+    margin-top: 30px;
+    cursor: pointer;
+
+    &::after {
+        content: ">";
+        margin-left: 10px;
+        transition: 0.1s margin;
+    }
+
+    &:hover::after {
+        margin-left: 15px;
+    }
+
+    &:active::after {
+        margin-left: 5px;
+    }
+}
+
+
+.output {
+    select {
+        width: 220px;
+
+        float: left;
+        position: relative; bottom: 10px;
+    }
+}

@@ -1,0 +1,43 @@
+
+.subpage {
+    width: 512px;
+    margin: 5% auto;
+}
+
+.subpage h1 {
+    color: $mid2;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 7px;
+    border-bottom: 4px solid $mid2;
+}
+
+.subpage table {
+    width: 100%;
+    margin: 40px 0 40px 0;
+    color: $mid2;
+
+    tr:not(.header):hover {
+        background: rgba(255,255,255,0.1);
+    }
+
+    th {
+        background: rgba(255,255,255,0.2);
+        padding: 10px;
+        font-size: 1.5em;
+    }
+
+    td {
+        background: rgba(255,255,255,0.1);
+        padding: 10px;
+    }
+}
+
+.subpage p {
+    color: $mid1;
+}
+
+
+.actionbar {
+    margin-top: 10%;
+}

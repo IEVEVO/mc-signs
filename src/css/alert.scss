@@ -1,0 +1,54 @@
+
+.react-confirm-alert {
+    background: $bg;
+    color: $mid1;
+
+    h1 {
+        color: $mid2;
+        margin-bottom: 10px;
+    }
+
+    .react-confirm-alert-body {
+        background: $bg;
+        font-family: $font;
+    }
+
+    .react-confirm-alert-button-group {
+        margin: 30px 0 0 0;
+        width: 100%;
+        text-align: center;
+
+        button {
+            background: rgba(255,255,255,0.1);
+            padding: 10px 14px 10px 14px;
+            width: 100%;
+            font-size: 1em;
+            border: 1px solid $mid2;
+            color: $mid2;
+            transition: 0.1s color, 0.1s background, 0.1s border;
+
+            &:hover {
+                background: rgba(255,255,255,0.05);
+            }
+
+            &:last-child {
+                color: $hl;
+                border-color: $hl;
+            }
+
+            &:active {
+                background: $hl;
+            }
+        }
+    }
+}
+
+
+.react-confirm-alert-overlay {
+    background: rgba(0,0,0,0.8);
+
+    -webkit-animation: react-confirm-alert-fadeIn 0.3s 0s forwards;
+    -moz-animation: react-confirm-alert-fadeIn 0.3s 0s forwards;
+    -o-animation: react-confirm-alert-fadeIn 0.3s 0s forwards;
+    animation: react-confirm-alert-fadeIn 0.3s 0s forwards;
+}
