@@ -2,7 +2,7 @@
   "name": "MCSigns",
   "version": "1.0.0",
   "description": "",
-  "homepage": "./",
+  "homepage": "/",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
