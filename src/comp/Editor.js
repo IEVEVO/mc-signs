@@ -16,7 +16,7 @@ export class Editor extends React.Component {
     }
 
     updateButtons(e) {
-        var name = e.target.name,
+        var name = e.target.name || e.target.parentNode.name,
             val = this.props.data[name];
 
         console.log(val);
@@ -32,7 +32,7 @@ export class Editor extends React.Component {
             window.alert("aaaaaaaaaaaaaa");
         }
 
-        this.props.update(e.target.name, val);
+        this.props.update(name, val);
     }
 
     changeType(e) {
