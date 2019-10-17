@@ -1,14 +1,14 @@
 {
   "name": "MCSigns",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
-  "homepage": "/",
+  "homepage": "",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
     "copy-to-clipboard": "^3.2.0",
     "prop-types": "^15.7.2",
-    "react": "16.8.6",
+    "react": "^16.8.6",
     "react-confirm-alert": "^2.4.1",
     "react-dom": "16.8.6",
     "react-router": "^5.0.0",
