@@ -1,5 +1,2 @@
-- fix b/u/i/s/obf buttons
 - fix full width lines
-+ use cookies to save
-  - save/load system using localStorage
 - instructions on how to craft in survival?
